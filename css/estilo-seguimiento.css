@@ -136,7 +136,7 @@ p#error {
     justify-content: center;
     align-items: center;
     padding: 4.5rem 2rem;
-    background-image: url("/img/seguimientoh.jpg");
+    background-image: url("../img/seguimientoh.jpg");
     background-size: 52rem;
 }
 
