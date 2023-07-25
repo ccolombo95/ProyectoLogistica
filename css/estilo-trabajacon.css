@@ -3,7 +3,7 @@ main {
     flex-direction: column;
 }
 #presentacion {
-    background-image: url("/img/equipo.jpg");
+    background-image: url("../img/equipo.jpg");
     background-size: 90rem;
 }
 p.titulo {
