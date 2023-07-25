@@ -86,10 +86,11 @@ createApp({
             cuatro.classList.add("active");
           }
 
-          texto.style.display="inline-flex";
-          error.style.display="none"
+          texto.style.display="flex";
+          holanombre.style.display ="flex";
+          ordenN.style.display="flex";
+          error.style.display="none";
           
-  
           holanombre.textContent = `HOLA, ${coincidencia.nombre.toUpperCase()}! `;
           ordenN.textContent = `Orden N° ${coincidencia.id}`;
         }
