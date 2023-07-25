@@ -10,7 +10,7 @@ main{
 }
 
 #presentacion {
-    background-image: url("/img/mapa.jpg");
+    background-image: url("../img/mapa.jpg");
     background-size: 90rem;
 }
 p.titulo {
