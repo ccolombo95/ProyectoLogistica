@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logística SRL</title>
+    <link rel="shortcut icon" href="img/Pestaña.png">
+    <link rel="stylesheet" href="css/estilo-general.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+<body> 
+    <header>
+        <nav class="menu">
+            <section class="menu__container">
+                <a href="index.html" class="menu__logo  animate__animated animate__fadeIn" ><img src="img/logo.png" alt="Logo logistica SRL" width="110rem" ></img></a>
+                
+                <div class="menu__hamburguer">
+                    <img src="assets/menu.svg"  alt="Logo logistica SRL" class="menu__img">
+                </div>
+                
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Inicio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#contacto" class="menu__link"> Contacto </i></a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="html/trabajacon.html" class="menu__link">Trabajá con nosotros</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="html/seguimiento.html" class="menu__link">Seguí tu pedido</a>
+                    </li>
+
+                </ul>
+                
+            </section>    
+        </nav>
+    </header> 
+    
+    
+    <main>
+        <section id="presentacion">
+            <article class="presentacion ">
+                <p class="titulo animate__animated animate__bounce">LOGÍSTICA SRL </p>
+                <p class="animate__animated animate__bounce">Somos una empresa de más de 10 años de experiencia en traslados de suministros, bienes y productos de un lugar a otro a través de varios modos de transporte. La gestión eficaz de los envíos logísticos de transporte es crucial para que las empresas garanticen la entrega oportuna de los productos a sus clientes. </p>
+            </article>
+        </section>
+        <section id="servicios">
+            <ul class="servicios">
+                <li class="animate__animated animate__fadeInLeft"><img src="assets/business.svg"> <div class="txt-servicios"><p class="titulo-servicios">Nuestros clientes</p><p class="txt-servicios"> Gestionamos los envíos para grandes, medianas, pequeñas empresas y envíos personales </p></div></li>
+                <li class="animate__animated animate__fadeInLeft"><img src="assets/truck.svg"> <div class="txt-servicios"><p class="titulo-servicios">Vehiculos</p><p class="txt-servicios">Desde camiones hasta minifletes, trabajamos con vehiculos adaptados a sus necesidades.</p></div></li>
+                <li class="animate__animated animate__fadeInRight"><img src="assets/fastest-delivery.svg"><div class="txt-servicios"><p class="titulo-servicios">Eficiencia</p><p class="txt-servicios">Garantizamos envíos seguros en tiempo record por todo el pais.</p></div></li>
+                <li class="animate__animated animate__fadeInRight"><img src="assets/shield.svg"><div class="txt-servicios"><p class="titulo-servicios">Seguridad</p><p class="txt-servicios">Ofrecemos seguro para los productos se encuentran bajo nuestra responsabilidad.</p></div></li>
+            </ul>
+            
+        </section>
+
+        <section id="contacto">
+            <section id="container-slider">
+                <ul  id="slider">
+                    <li class="slider-li"><img src="img/slider-1.jpg" width="3rem"> <div class="txt-div "> <p class="titulo-slider">Personal calificado</p><p class="texto-slider">Todo nuestro personal se encuentra capacitado para que puedan resolver cualquier tipo de gestión o inconveniente de manera rápida y efectiva.</p></div></li>
+                    <li class="slider-li" ><img src="img/slider-2.jpg" width="3rem"> <div class="txt-div"> <p class="titulo-slider">Entrega a domicilio</p><p class="texto-slider">Las beneficios de este servicio tanto para los clientes como para las empresas, es el desafio que nos con lleva a cumplir en tiempo y forma con nuestros servicios.</p></div></li>
+                    <li class="slider-li" ><img src="img/slider-3.jpg" width="3rem"> <div class="txt-div"> <p class="titulo-slider">Flotas de trafic</p><p class="texto-slider">Siempre con vehiculos preparados para la mercaderia. La eficiencia y la seguridad son claves para generar confianza con el cliente.</p></div></li>
+                    <li class="slider-li" ><img src="img/slider-4.jpg" width="3rem"> <div class="txt-div"> <p class="titulo-slider">Camiones 0KM</p><p class="texto-slider">Principales  responsables de mover mercancías a largas distancias, donde la eficacia y la seguridad son el principal objetivo de la empresa.</p></div></li>
+                </ul>
+                <div class="btn-left" ><i class='bx bx-chevron-left'></i></div>
+                <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+                <ul id="puntos">
+                    <li class="punto activo"></li>
+                    <li class="punto "></li>
+                    <li class="punto "></li>
+                    <li class="punto "></li>
+                </ul>
+            </section>
+            <div id="formulario">
+                <form method="POST" action="https://formspree.io/f/xnqyeaqr" id="form_contacto">
+                    <p class="titulo">CONTACTO</p>
+                    <div id="datos_form">
+                        <label for="Nombre/Empresa">Nombre y apellido / Empresa</label>
+                        <input type="text" name="Nombre/Empresa" required>
+                        
+                        <label for="fullname">Mail</label>
+                        <input type="email" name="fullname" id="mail" required>
+                        
+                        <label for="Asunto">Asunto</label>
+                        <select name="Asunto" id="Asunto" value="Seleccionar opción" required>
+                            <option value="selecciona"></option>
+                            <option value="Cotización">Cotización</option>
+                            <option value="Cotización">Cotización para empresas</option>
+                            <option value="otro">Otra consulta</option>
+                        </select>
+                        
+                        <label for="message">Mensaje</label required>
+                        <textarea  name="message" id="mensaje" rows="4"> </textarea>
+                    </div>
+                    <button type="submit" id="boton_form"> Enviar</button>
+                </form>
+                <script>
+                    const $form = document.getElementById("form_contacto");
+        
+                    $form.addEventListener("submit",  handleSumit);
+        
+                    async function handleSumit(event) {
+                        event.preventDefault();
+                        const form = new FormData(this);
+                        
+                        const response = await fetch(this.action, {
+                            method: this.method,
+                            body: form,
+                            headers: {
+                                "Accept": "application/json"
+                            }
+                        })
+                        console.log(response)
+                        if (response.ok) {
+                            this.reset()
+                            alert("Gracias por enviar el formulario")
+                        }
+                    }
+                </script>
+            </div>
+        </section>
+        <section id="empresas">
+            <h1>EMPRESAS QUE SIGUEN CONFIANDO EN NOSOTROS</h1>
+            <div class="clientes">
+                <img id="cliente_img" src="img/cliente-1.png" alt="logo empresa logoname">
+                <img id="cliente_img" src="img/cliente-2.png" alt="logo empresa zimal">
+                <img  id="cliente_img" src="img/cliente-3.png" alt="logo empresa logo name">
+                <img id="cliente_img" src="img/cliente-4.png" alt="logo empresa tagline">
+                <img id="cliente_img" src="img/cliente-5.png" alt="logo empresa tagline">
+                <img id="cliente_img" src="img/cliente-6.png" alt="logo empresa tagline">
+
+            </div>
+        </section>
+        <div id="whatsapp">
+            <a href=" https://api.whatsapp.com/send/?phone=5491127370594" target="_blank">
+              <img class="wp" src="assets/whatsappi.svg">
+            </a>
+         </div>
+
+         <script src="js/app.js"></script>
+    </main>
+
+    <footer>
+        <ul class="lista__footer">
+            <li class="item__telefono">0800-444-7755</li>
+            <li class="item__mail">consultasLSRL@logistica.com.ar</li>
+            <li class="item__ubicacion">Adolfo Alsina 1653</li>
+            
+            <ul class="item__redes">
+                <li class="item"><a href="https://es-la.facebook.com"><img src="assets/facebook.svg" alt="icono facebook" height="30rem"></a></li>
+                <li class="item"><a href="https://www.instagram.com"><img src="assets/instagram.svg" alt="icono instagram" height="30rem"></a></li>
+                <li class="item"><a href=" https://api.whatsapp.com/send/?phone=5491127370594"><img src="assets/whatsapp.svg" alt="icono whatsapp" height="30rem"></a></li>     
+            </ul>
+            <li class="item__copy">Copyright Reserved 2023 <img src="assets/copy.svg"alt="icono de copyright" width="15rem"></li>
+        </ul>
+        
+        <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3283.716900547346!2d-58.392128923544426!3d-34.61131955790088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM2JzQwLjgiUyA1OMKwMjMnMjIuNCJX!5e0!3m2!1ses!2sar!4v1682980024059!5m2!1ses!2sar" width="150%" height="90%"  style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+

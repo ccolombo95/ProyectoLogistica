@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguí tu pedido</title>
+    <link rel="stylesheet" href="/css/estilo-seguimiento.css">
+    <link rel="stylesheet" href="/css/estilo-general.css">
+    <link rel="shortcut icon" href="/img/Pestaña.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    
+</head>
+
+<!-- CONTENEDOR PADRE -->
+<body>
+    <header>
+        <nav class="menu">
+            <section class="menu__container">
+                <a href="../index.html" class="menu__logo  animate__animated animate__fadeIn" ><img src="/img/logo.png" alt="Logo logistica SRL" width="110rem" ></img></a>
+                
+                <div class="menu__hamburguer">
+                    <img src="/assets/menu.svg"  alt="Logo logistica SRL" class="menu__img">
+                </div>
+                
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="../index.html" class="menu__link">Inicio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../index.html#contacto" class="menu__link"> Contacto </i></a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../html/trabajacon.html" class="menu__link">Trabajá con nosotros</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="seguimiento.html" class="menu__link">Seguí tu pedido</a>
+                    </li>
+                </ul>
+                
+            </section>    
+        </nav>
+        <script src="../js/app.js"></script>
+    </header> 
+    
+    <main>
+        <section id="presentacion">
+            <article class="presentacion ">
+                <p class="titulo animate__animated animate__bounce">Seguimientos de envíos</p>
+                <p class="subtitulo animate__animated animate__bounce"> Logística SRL te mantiene al tanto de tus pedidos a través del ingreso del código otorgado durante la contratación del servicio. </p>
+            </article>
+        </section>
+
+        <section class="seccion__seguimiento" id="app">
+            <!-- FORMULARIO -->
+            <form action="#" id="form__norden"  @submit.prevent="searchData">
+                <div class="form">
+                    <input v-model="search" type="number" name="quantity" id="search" placeholder="Código de seguimiento" required  v-on:keyup.enter="searchData" >
+                </div>
+                <div class="form__botones">
+                    <button v-on:click="searchData" id="buscar" type="submit"> Buscar </button>
+                    <a href="seguimiento.html" id="reset">x</a>
+                </div>
+            </form>
+            <div class="seccion__progreso">
+                <div id="txt-progreso">
+                    <p id="holanombre"></p>
+                    <p id="ordenN"></p>
+                    <p id="error"></p>
+                </div>
+                
+                <div id="barra__progreso">
+                    <ul>
+                        <li>
+                            <i class="icono uil uil-clipboard-notes"></i>
+                            <div class="progreso uno">
+                                <p>1</p>
+                                <i class="uil uil-check"></i>
+                            </div>
+                            <p class="text">Procesada</p>
+                        </li>
+                        <li>
+                            <i class="icono uil uil-box"></i>
+                            <div class="progreso dos">
+                                <p>2</p>
+                                <i class="uil uil-check"></i>
+                            </div>
+                            <p class="text">Preparada</p>
+                        </li>
+                        <li>
+                            <i class="icono uil uil-truck"></i>
+                            <div class="progreso tres">
+                                <p>3</p>
+                                <i class="uil uil-check"></i>
+                            </div>
+                            <p class="text">En camino</p>
+                        </li>
+                        <li>
+                            <i class="icono uil uil-house-user"></i>
+                            <div class="progreso cuatro">
+                                <p>4</p>
+                                <i class="uil uil-check"></i>
+                            </div>
+                            <p class="text">Entregada</p>
+                        </li>
+                        
+                    </ul>
+            
+                </div>
+                
+            </div>
+
+
+
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Enlace de VUE-->
+        <script src="/js/seguimiento.js"></script>
+        
+        <div id="whatsapp">
+            <a href=" https://api.whatsapp.com/send/?phone=5491127370594" target="_blank">
+              <img class="wp" src="../assets/whatsappi.svg">
+            </a>
+        </div>
+
+    </main>
+ 
+
+    <!-- INICIO CONTENEDOR FOOTER -->
+    <footer>
+        <ul class="lista__footer">
+            <li class="item__telefono">0800-444-7755</li>
+            <li class="item__mail">logistica@hotmail.com.ar</li>
+            <li class="item__ubicacion">Adolfo Alsina 1653</li>
+            
+            <ul class="item__redes">
+                <li class="item"><a href="https://es-la.facebook.com"><img src="../assets/facebook.svg" alt="icono facebook" height="30rem"></a></li>
+                <li class="item"><a href="https://www.instagram.com"><img src="../assets/instagram.svg" alt="icono instagram" height="30rem"></a></li>
+                <li class="item"><a href=" https://api.whatsapp.com/send/?phone=5491127370594"><img src="../assets/whatsapp.svg" alt="icono whatsapp" height="30rem"></a></li>    
+            </ul>
+            <li class="item__copy">Copyright Reserved 2023 <img src="../assets/copy.svg" width="15rem"></li>
+        </ul>
+        
+        <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3283.716900547346!2d-58.392128923544426!3d-34.61131955790088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM2JzQwLjgiUyA1OMKwMjMnMjIuNCJX!5e0!3m2!1ses!2sar!4v1682980024059!5m2!1ses!2sar" width="150%" height="90%"  style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </footer>
+</body>
+</html>
+
+
+
