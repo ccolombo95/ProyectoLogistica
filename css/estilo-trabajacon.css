@@ -16,7 +16,7 @@ p.titulo {
 
 /* CARROUSEL + FORMULARIO */
 #contacto {
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 3rem 0;
 }
 #container-slider {
     width: 22rem;
@@ -42,7 +42,7 @@ p.titulo {
 #formulario {
     width: 40rem;
     height: max-content;
-    padding: 1.5rem 4rem 1rem 4rem;
+    padding: 1rem 4rem 1rem 4rem;
     margin: 0;
 }
 #form_trabajadores {
@@ -54,6 +54,33 @@ p.titulo {
 
 #datos_form input, select {
     height: 1.7rem;
+}
+.file-select {
+    position: relative;
+    margin: 0.2em 0 1em 0;
+    margin-bottom: .4rem;
+
+  }
+  
+.file-select::before {
+    background-color:  rgb(14, 40, 80);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.66);
+    content: url(../assets/upload.svg) ;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+
+}
+  
+.file-select input[type="file"] {
+    opacity: 0;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
