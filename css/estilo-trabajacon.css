@@ -3,7 +3,7 @@ main {
     flex-direction: column;
 }
 #presentacion {
-    background-image: url("../img/equipo.jpg");
+    background-image: url("/img/equipo.jpg");
     background-size: 90rem;
 }
 p.titulo {
@@ -52,13 +52,13 @@ p.titulo {
     padding: 0;
 }
 
-#datos_form input, select {
+#datos_form input, select, textarea {
     height: 1.7rem;
+    margin-bottom: .4rem;
 }
 .file-select {
     position: relative;
     margin: 0.2em 0 1em 0;
-    margin-bottom: .4rem;
 
   }
   
@@ -70,7 +70,7 @@ p.titulo {
     align-items: center;
     border-radius: 2px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.66);
-    content: url("../assets/upload.svg") ;
+    content: url(../assets/upload.svg) ;
     position: absolute;
     width: 100%;
     padding: 0;
@@ -85,6 +85,7 @@ p.titulo {
 
 @media screen and (max-width: 1000px) {
     #presentacion {
+        width: 100%;
         background-size: 80rem;
     }
     @media screen and (max-width: 700px) {
@@ -99,12 +100,33 @@ p.titulo {
         @media screen and (max-width: 580px) {
             #presentacion {
                 background-size: 40rem;
+                margin: 85px 0 5px 0;
+            }
+            #formulario {
+                width: 35rem;
             }
             @media screen and (max-width: 380px) {
-            #formulario {
-                background-size: 30rem;
-            }
-        }
+                #contacto {
+                    width: 100%;
+                    padding: 0.3em 0 0 0;
+                    margin: 0;
+                    
+                }
+                #container-slider {
+                    padding: 0;
+                    margin: 0;
+                }
+                #formulario {
+                    width: 23rem;
+                    padding: 2em ;
+
+                }
+            }    
+
+            
+
+            
+    
         }
     }
 

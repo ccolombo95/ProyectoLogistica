@@ -55,19 +55,22 @@ main{
     color: white;
     display: block;
     z-index: 9999;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .menu__container {
     display: flex;
-    
     align-items: center;
     justify-content: space-between;
     
     background-color:rgba(0, 0, 0, 0.5) ;
     width: 100%;
-    max-height: 2rem;
+    max-width: 100%;
+    max-height: max-content;
     margin: 0;
-    padding: 4rem 5rem 3.3rem 5rem;
+    padding: .3em 5rem .1em 5rem;
 }
 
 .menu__links {
@@ -105,10 +108,13 @@ main{
     cursor: pointer;
     
 }
-.menu__img {
+.menu__burger {
     display: block;
     width: 2.5rem;
     
+}
+.menu__img {
+    width: 7rem;
 }
 /* CARROUSEL + FORM */
 #contacto {
@@ -120,7 +126,7 @@ main{
     box-shadow: 0px 0px 1px 1px rgb(150, 149, 149);
     background-color: rgb(203, 202, 202,0.2) ;
     max-height: max-content;
-    max-width: max-content;
+    max-width: 100%;
     padding: 0.3rem 0.3rem;      
 }
 #container-slider {
@@ -327,10 +333,13 @@ img.wp {
         .menu__hamburguer {
             display:flex;
         }
-        
+        .menu {
+            width: 100%;
+        }
         .menu__links {
             position: fixed;
-            max-width: 350px;
+            max-width: max-content;
+            padding: 0 1rem;
             width: 100%;
             
             top: 97px;
@@ -392,6 +401,23 @@ img.wp {
                 .mapa iframe {
                     height: 170px;
                 }
+                #contacto {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+                .menu__burger {
+                    display: block;
+                    width: 2rem;
+                }
+                .menu__img {
+                    width: 5rem;
+                }
+                .menu__links {
+                    top: 67px;
+                }
+
+
 
             }
         }

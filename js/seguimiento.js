@@ -3,11 +3,12 @@ const { createApp } = Vue;
 // Crea una instancia de la aplicación Vue
 createApp({
   data() {
-    /* El código define una instancia de la aplicación Vue. Aquí se especifican los datos utilizados por la aplicación, incluyendo la lista de pedidos, la URL del backend, indicadores de error y carga, así como los atributos para almacenar los valores del formulario de producto.
+    /* El código define una instancia de la aplicación Vue. Aquí se especifican los datos utilizados por la aplicación, incluyendo la lista de productos, la URL del backend, indicadores de error y carga, así como los atributos para almacenar los valores del formulario de producto.
      */
     return {
       seguimiento: [], // Almacena los productos obtenidos del backend
-      url: "https://ccolombo.pythonanywhere.com/seguimiento", // URL del backend donde se encuentran los pedidos
+      // url:'http://localhost:5000/productos', // URL local
+      url: "https://ccolombo.pythonanywhere.com/seguimiento", // URL del backend donde se encuentran los productos
       error: false,
       cargando: true,
       // Atributos para el almacenar los valores del formulario
@@ -25,7 +26,7 @@ createApp({
       fetch(url)
         .then((response) => response.json()) // Convierte la respuesta en formato JSON
         .then((data) => {
-          // Asigna los datos de los productos obtenidos al arreglo 'seguimiento'
+          // Asigna los datos de los productos obtenidos al arreglo 'productos'
           this.seguimiento = data;
           this.cargando = false;
         })
@@ -42,7 +43,7 @@ createApp({
       const ordenN = document.getElementById("ordenN");
       const error = document.getElementById("error");
 
-      input.disabled = true;
+      
       let search = this.search;
       data = this.seguimiento;
       var coincidencia = [];
@@ -88,8 +89,9 @@ createApp({
           texto.style.display="flex";
           holanombre.style.display ="flex";
           ordenN.style.display="flex";
-          error.style.display="none";
+          error.style.display="none"
           
+  
           holanombre.textContent = `HOLA, ${coincidencia.nombre.toUpperCase()}! `;
           ordenN.textContent = `Orden N° ${coincidencia.id}`;
         }

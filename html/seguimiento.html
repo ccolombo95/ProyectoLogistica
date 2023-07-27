@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seguí tu pedido</title>
-    <link rel="stylesheet" href="../css/estilo-seguimiento.css">
-    <link rel="stylesheet" href="../css/estilo-general.css">
-    <link rel="shortcut icon" href="../img/Pestaña.png">
+    <link rel="stylesheet" href="/css/estilo-seguimiento.css">
+    <link rel="stylesheet" href="/css/estilo-general.css">
+    <link rel="shortcut icon" href="/img/Pestaña.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.0/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     
@@ -25,10 +24,10 @@
     <header>
         <nav class="menu">
             <section class="menu__container">
-                <a href="../index.html" class="menu__logo  animate__animated animate__fadeIn" ><img src="../img/logo.png" alt="Logo logistica SRL" width="110rem" ></img></a>
+                <a href="../index.html" class="menu__logo  animate__animated animate__fadeIn" ><img src="/img/logo.png" alt="Logo logistica SRL" class="menu__img" ></img></a>
                 
                 <div class="menu__hamburguer">
-                    <img src="../assets/menu.svg"  alt="Logo logistica SRL" class="menu__img">
+                    <img src="/assets/menu.svg"  alt="Logo logistica SRL" class="menu__burger">
                 </div>
                 
                 <ul class="menu__links">
@@ -66,7 +65,7 @@
                     <input v-model="search" type="number" name="quantity" id="search" placeholder="Código de seguimiento" required  v-on:keyup.enter="searchData" >
                 </div>
                 <div class="form__botones">
-                    <button v-on:click="searchData" id="buscar" type="submit"> Buscar </button>
+                    <button v-on:click="searchData" id="buscar" type="submit"><i class="uil uil-search-alt" id="icono"></i><p id="txt-button">Buscar</p></button>
                     <a href="seguimiento.html" id="reset">x</a>
                 </div>
             </form>
@@ -118,13 +117,11 @@
                 
             </div>
 
-
-
         </section>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Enlace de VUE-->
-        <script src="../js/seguimiento.js"></script>
+        <script src="/js/seguimiento.js"></script>
         
         <div id="whatsapp">
             <a href=" https://api.whatsapp.com/send/?phone=5491127370594" target="_blank">
