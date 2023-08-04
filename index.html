@@ -1,181 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logística SRL</title>
-    <link rel="shortcut icon" href="img/Pestaña.png">
-    <link rel="stylesheet" href="css/estilo-general.css">
+    <title>SISWORK</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="js/jquery.js"></script>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
+<body>
 
-<body> 
+    <!-- INICIO HEADER -->
     <header>
         <nav class="menu">
-            <section class="menu__container">
-                <a href="index.html" class="menu__logo  animate__animated animate__fadeIn" ><img src="img/logo.png" alt="Logo logistica SRL"  class="menu__img"></img></a>
-                
-                <div class="menu__hamburguer">
-                    <img src="assets/menu.svg"  alt="Logo logistica SRL" class="menu__burger">
-                </div>
-                
-                <ul class="menu__links">
-                    <li class="menu__item">
-                        <a href="index.html" class="menu__link">Inicio</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#contacto" class="menu__link"> Contacto </i></a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="html/trabajacon.html" class="menu__link">Trabajá con nosotros</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="html/seguimiento.html" class="menu__link">Seguí tu pedido</a>
-                    </li>
+            <section class="menu-container">
+                <div id="menu-siswork"><p>SISWORK</p></div>
+
+                <ul class="menu-links">
+                    <li class="linea"></li>
+                    <li class="menu-item "><a href="#inicio" class="menu-link">Inicio</a></li>
+                    <li class="menu-item "><a href="#somos" class="menu-link">Quiénes somos</a></li>
+                    <li class="menu-item"><a href="#servicios" class="menu-link">Servicios</a></li>
+                    <li class="menu-item"><a href="#contacto" class="menu-link">Contacto</a></li>
+                    <li class="menu-desplegable"><img src="assets/arrow.svg" class="menu-img" width="20rem"></li>
 
                 </ul>
-                
             </section>    
         </nav>
     </header> 
-    
+
     
     <main>
-        <section id="presentacion">
-            <article class="presentacion ">
-                <p class="titulo animate__animated animate__bounce">LOGÍSTICA SRL </p>
-                <p class="animate__animated animate__bounce">Somos una empresa de más de 10 años de experiencia en traslados de suministros, bienes y productos de un lugar a otro a través de varios modos de transporte. La gestión eficaz de los envíos logísticos de transporte es crucial para que las empresas garanticen la entrega oportuna de los productos a sus clientes. </p>
-            </article>
-        </section>
-        <section id="servicios">
-            <ul class="servicios">
-                <li class="animate__animated animate__fadeInLeft"><img src="assets/business.svg"> <div class="txt-servicios"><p class="titulo-servicios">Nuestros clientes</p><p class="txt-servicios"> Gestionamos los envíos para grandes, medianas, pequeñas empresas y envíos personales </p></div></li>
-                <li class="animate__animated animate__fadeInLeft"><img src="assets/truck.svg"> <div class="txt-servicios"><p class="titulo-servicios">Vehiculos</p><p class="txt-servicios">Desde camiones hasta minifletes, trabajamos con vehiculos adaptados a sus necesidades.</p></div></li>
-                <li class="animate__animated animate__fadeInRight"><img src="assets/fastest-delivery.svg"><div class="txt-servicios"><p class="titulo-servicios">Eficiencia</p><p class="txt-servicios">Garantizamos envíos seguros en tiempo record por todo el pais.</p></div></li>
-                <li class="animate__animated animate__fadeInRight"><img src="assets/shield.svg"><div class="txt-servicios"><p class="titulo-servicios">Seguridad</p><p class="txt-servicios">Ofrecemos seguro para los productos se encuentran bajo nuestra responsabilidad.</p></div></li>
-            </ul>
-            
-        </section>
-
-        <section id="contacto">
-            <section id="container-slider">
-                <ul  id="slider">
-                    <li class="slider-li"><img src="img/slider-1.jpg" width="3rem"> <div class="txt-div "> <p class="titulo-slider">Personal calificado</p><p class="texto-slider">Todo nuestro personal se encuentra capacitado para que puedan resolver cualquier tipo de gestión o inconveniente de manera rápida y efectiva.</p></div></li>
-                    <li class="slider-li" ><img src="img/slider-2.jpg" width="3rem"> <div class="txt-div"> <p class="titulo-slider">Entrega a domicilio</p><p class="texto-slider">Las beneficios de este servicio tanto para los clientes como para las empresas, es el desafio que nos con lleva a cumplir en tiempo y forma con nuestros servicios.</p></div></li>
-                    <li class="slider-li" ><img src="img/slider-3.jpg" width="3rem"> <div class="txt-div"> <p class="titulo-slider">Flotas de trafic</p><p class="texto-slider">Siempre con vehiculos preparados para la mercaderia. La eficiencia y la seguridad son claves para generar confianza con el cliente.</p></div></li>
-                    <li class="slider-li" ><img src="img/slider-4.jpg" width="3rem"> <div class="txt-div"> <p class="titulo-slider">Camiones 0KM</p><p class="texto-slider">Principales  responsables de mover mercancías a largas distancias, donde la eficacia y la seguridad son el principal objetivo de la empresa.</p></div></li>
-                </ul>
-                <div class="btn-left" ><i class='bx bx-chevron-left'></i></div>
-                <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
-                <ul id="puntos">
-                    <li class="punto activo"></li>
-                    <li class="punto "></li>
-                    <li class="punto "></li>
-                    <li class="punto "></li>
-                </ul>
-            </section>
-            <div id="formulario">
-                <form method="POST" action="https://formspree.io/f/xnqyeaqr" id="form_contacto">
-                    <p class="titulo">CONTACTO</p>
-                    <div id="datos_form">
-                        <label for="Nombre/Empresa">Nombre y apellido / Empresa</label>
-                        <input type="text" name="Nombre/Empresa" required>
-                        
-                        <label for="fullname">Mail</label>
-                        <input type="email" name="fullname" id="mail" required>
-                        
-                        <label for="Asunto">Asunto</label>
-                        <select name="Asunto" id="Asunto" value="Seleccionar opción" required>
-                            <option value="selecciona"></option>
-                            <option value="Cotización">Cotización</option>
-                            <option value="Cotización">Cotización para empresas</option>
-                            <option value="otro">Otra consulta</option>
-                        </select>
-                        
-                        <label for="message">Mensaje</label required>
-                        <textarea  name="message" id="mensaje" rows="4"> </textarea>
+        <section id="inicio">
+            <div class="movil">
+                <p>jdksa</p>
+            </div>
+            <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel" data-slide-to="1"></li>
+                  <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+              
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg" class="d-block w-100" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="first">
+                            <img src="assets/Logo vectorizado-Siswork-blanco-05.svg" alt="Logo SISWORK soluciones it" id="logo-carousel" ></img>
+                            <button class="boton-carousel"><a href="#contacto" id="link-contacto">Contáctanos</a></button>
+                        </div>
                     </div>
-                    <button type="submit" id="boton_form"> Enviar</button>
-                </form>
-                <script>
-                    const $form = document.getElementById("form_contacto");
-        
-                    $form.addEventListener("submit",  handleSumit);
-        
-                    async function handleSumit(event) {
-                        event.preventDefault();
-                        const form = new FormData(this);
-                        
-                        const response = await fetch(this.action, {
-                            method: this.method,
-                            body: form,
-                            headers: {
-                                "Accept": "application/json"
-                            }
-                        })
-                        console.log(response)
-                        if (response.ok) {
-                            this.reset()
-                            alert("Gracias por enviar el formulario")
-                        }
-                    }
-                </script>
-            </div>
-        </section>
-        <section id="empresas">
-            <h1>EMPRESAS QUE SIGUEN CONFIANDO EN NOSOTROS</h1>
-            <div class="clientes">
-                <img id="cliente_img" src="img/cliente-1.png" alt="logo empresa logoname">
-                <img id="cliente_img" src="img/cliente-2.png" alt="logo empresa zimal">
-                <img  id="cliente_img" src="img/cliente-3.png" alt="logo empresa logo name">
-                <img id="cliente_img" src="img/cliente-4.png" alt="logo empresa tagline">
-                <img id="cliente_img" src="img/cliente-5.png" alt="logo empresa tagline">
-                <img id="cliente_img" src="img/cliente-6.png" alt="logo empresa tagline">
+                  </div>
 
-            </div>
+                  <div class="carousel-item">
+                    <img src="img/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption txt d-none d-md-block" >
+                        <p class="titulo-carousel" >SOLUCIONES IT</p>
+                        <p class="sub-carousel">Praesent commodo cursus magna.</p>
+                    </div>
+                  </div>
+              
+                  <div class="carousel-item">
+                    <img src="img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption txt d-none d-md-block"  >
+                        <p class="titulo-carousel">SOLUCIONES IT</p>
+                        <p class="sub-carousel" >Praesent commodo cursus magna</p>
+                    </div>
+                  </div>
+              
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </section>
-        <div id="whatsapp">
-            <a href=" https://api.whatsapp.com/send/?phone=5491127370594" target="_blank">
-              <img class="wp" src="assets/whatsappi.svg">
+
+        <section id="section-somos">
+            <div id="somos">
+                <article class="somos">  
+                    <p class="titulo-somos">QUIENES SOMOS </p>
+                    <div class="contenido contenedor-elementos">
+                        <img src="img/ImagenSomos.svg" data-animation="fadeL" id="img-somos">
+                        <p class="texto-somos">Somos una empresa nacional que opera desde el 2007 en el mercado de la informática y comunicaciones, destacada en el compromiso y la profesionalidad en todos los ámbitos. <br><br> Nuestra área de negocios está desarrollada en medianas y grandes empresas de zona norte; Zárate, Campana, Lima, Escobar y Pilar. Ofrecemos soluciones integrales a sus problemas, servicio especializado para cada necesidad, abastecimiento de los recursos necesarios y tareas profesionales a través de un equipo de formación técnica y experiencia práctica.</p>
+                    </div> 
+                </article>
+                <img src="img/FondoSomos.svg" alt="" style="width: 100%;">     
+            </div>
+
+
+            <div id="empresas">
+                <p class="titulo">EMPRESAS QUE CONFIARON EN NUESTRO TRABAJO</p>
+                <div class="contenedor-elementos empresa">
+                    <span class="contenedor-img" data-animation="show1"><p class="E-titulo"> Arauco Argentina</p><img src="assets/E-Arauco.svg" alt="" class="img-empresa"  id="dasburg" ></span>
+                    <span class="contenedor-img" data-animation="show2"><p class="E-titulo">Puerto de Zárate</p><img src="assets/E-puertozarate.svg"  class="img-empresa" id="ivess" ></span>
+                    <span class="contenedor-img" data-animation="show2"><p class="E-titulo">NA-SA</p><img src="assets/E-Nasa.svg" class="img-empresa" id="tz" ></span>
+                    <span class="contenedor-img" data-animation="show3"><p class="E-titulo">Ivess</p><img src="assets/E-Ivess.svg" class="img-empresa" id="nasa" ></span>
+                    <span class="contenedor-img"data-animation="show3"><p class="E-titulo">Secco</p><img src="assets/E-Secco.svg" class="img-empresa" id="atucha" ></span>
+                </div>
+            </div>  
+        </section>
+
+        
+        <section id="servicios">
+            <p class="titulo">SERVICIOS</p>
+
+            <div class="tipo-servicio soporte contenedor-elementos">
+                <img src="img/servicios.png" alt="" id="img-soporte" data-animation="fadeR">
+                <div class="texto-descripcion">
+                    <p class="sub-servicios">Soporte técnico </p>
+                    <p class="contenido-servicios">Nuestro objetivo es comprender claramente las necesidades de nuestros clientes y diseñar soluciones a medida que se adapten a la realidad proporcionándoles así, las herramientas más adecuadas para el desarrollo de la empresa. <br><br> Garantizamos el correcto funcionamiento de los sistemas y la infraestructura informática general de las empresas a través del tiempo. Para ello ofrecemos planes de soporte con personal capacitado, ofreciendo mucho más que una solución rápida a los problemas, ya que están preparados para evitar los fallos previsibles, trabajando activamente en la detección y solución de las causas que originan los inconvenientes, evitando pérdidas de tiempo operativo en la empresa.</p>
+                </div>
+            </div>
+
+
+            <div id="soporte" class="contenedor-elementos">
+                <article class="tipo-soporte">
+                    <img src="assets/optimizacion.svg" alt="" class="img-tipo-soporte" data-animation="show3">
+                    <div class="texto-soporte">
+                        <p class="sub-soporte">Optimizacion de equipos</p>
+                        <p class="contenido-soporte">Nuestra empresa de soluciones informáticas contempla todos los aspectos de su equipo.</p>
+                    </div>
+                </article>
+
+                <article class="tipo-soporte">
+                    <img src="assets/solucionesinf.svg" alt="" class="img-tipo-soporte" data-animation="show3">
+                    <div class="texto-soporte">
+                        <p class="sub-soporte"> Actualización de tecnología </p>
+                        <p class="contenido-soporte">Nuestra empresa de soluciones informáticas contempla todos los aspectos de su equipo.</p>
+                    </div>
+
+                </article>
+                <article class="tipo-soporte">
+                    <img src="assets/solucionesinf.svg" alt="" class="img-tipo-soporte" data-animation="show3">
+                    <div class="texto-soporte">
+                        <p class="sub-soporte"> Soporte técnico</p>
+                        <p class="contenido-soporte">Nuestra empresa de soluciones informáticas contempla todos los aspectos de su equipo.</p>
+                    </div>
+                </article>
+                <article class="tipo-soporte">
+                    <img src="assets/solucionesinf.svg" class="img-tipo-soporte" data-animation="show3">
+                    <div class="texto-soporte">
+                        <p class="sub-soporte">Back-up en la nube</p>
+                        <p class="contenido-soporte">Nuestra empresa de soluciones informáticas contempla todos los aspectos de su equipo.</p>
+                    </div>
+                </article>
+                <article class="tipo-soporte">
+                    <img src="assets/solucionesinf.svg" alt="" class="img-tipo-soporte" data-animation="show3">
+                    <div class="texto-soporte">
+                        <p class="sub-soporte">Cámaras de seguridad</p>
+                        <p class="contenido-soporte">Nuestra empresa de soluciones informáticas contempla todos los aspectos de su equipo.</p>
+                    </div>
+                </article>
+                <article class="tipo-soporte">
+                    <img src="assets/solucionesinf.svg" class="img-tipo-soporte" data-animation="show3">
+                    <div class="texto-soporte">
+                        <p class="sub-soporte">Administración de páginas web</p>
+                        <p class="contenido-soporte">Nuestra empresa de soluciones informáticas contempla todos los aspectos de su equipo.</p>
+                    </div>
+                </article>
+            </div>
+
+
+            <div class="tipo-servicio proveedor contenedor-elementos">
+                <img src="img/distribuidora.png" data-animation="fadeL" alt="" id="img-ventas">
+                <div class="texto-descripcion">
+                    <p class="sub-servicios">Distribuidora de tecnologia</p>
+                    <p class="contenido-servicios">Nos dedicamos implementación y optimización de equipos, servidores y toda una amplia gama de productos tecnológicos que puedan resultar para su empresa herramientas imprescindibles y de amplio desarrollo. Integramos recursos en equipamiento, conectividad y sistemas en soluciones completas para entornos de trabajo simples o complejos realizando, en cada caso, un análisis previo y brindamos asesoramiento sobre las características de las alternativas vigentes, con una visión global de los recursos disponibles y los requerimientos planteados. </p>
+                </div>
+            </div>
+
+
+            <div id="marcas" class="contenedor-elementos">
+                <span class="marca" data-animation="show1"><img src="assets/marcagenius.svg" alt=""></span>
+                <span class="marca" data-animation="show1"><img src="assets/marcavs.svg" alt=""></span>
+                <span class="marca" data-animation="show2"><img src="assets/marcalg.svg" alt=""></span>
+                <span class="marca" data-animation="show2"><img src="assets/marcaamp.svg"></span>
+                <span class="marca" data-animation="show3"><img src="assets/marcaapc.svg"></span>
+                <span class="marca" data-animation="show3"><img src="assets/marcashp.svg"></span>
+                <span class="marca" data-animation="show1"><img src="assets/marcalex.svg"></span>
+                <span class="marca" data-animation="show1"><img src="assets/marcazebra.svg"></span>
+                <span class="marca" data-animation="show2"><img src="assets/marcasiemens.svg"></span>
+                <span class="marca" data-animation="show2"><img src="assets/marcasamsung.svg"></span>
+                <span class="marca" data-animation="show3"><img src="assets/marcamicro.svg"></span>
+                <span class="marca" data-animation="show3"><img src="assets/marcarv.svg"></span>
+            </div>                    
+        </section>
+        
+        <section id="contacto">
+            <p class="titulo">CONTACTO</p>
+            <form method="POST" action="https://formspree.io/f/xoqzgavd" id="form-contacto">
+                <div id="datos-form">
+                    <label for="Nombre/Empresa">Nombre y apellido / Empresa</label>
+                    <input type="text" name="Nombre/Empresa" required>
+                    
+                    <label for="fullname">Mail</label>
+                    <input type="email" name="fullname" id="mail" required>
+                    
+                    <label for="Asunto">Asunto</label>
+                    <select name="Asunto" id="Asunto" value="Seleccionar opción" required>
+                        <option value="selecciona"></option>
+                        <option value="soporte">Soporte técnico</option>
+                        <option value="ventas">Ventas</option>
+                        <option value="otro">Otra consulta</option>
+                    </select>
+                    
+                    <label for="message">Mensaje</label required>
+                    <textarea  name="message" id="mensaje" rows="4"> </textarea>
+                </div>
+                <p id="form-estado" class=""></p>
+                <button type="submit" id="boton-form"> Enviar</button>
+            </form>
+            <script src="index.js"></script>
+        </section>
+
+        <div class="boton-flotante" id="whats">
+            <a href=" https://api.whatsapp.com/send/?phone=5493487663111" target="_blank">
+              <img id="wp" src="assets/whatsappi.svg">
             </a>
-         </div>
-
-         <script src="js/app.js"></script>
+        </div>
+        <div class="boton-flotante" id="telefono">
+            <a href="tel:+5493487663111">
+              <img id="tel" src="assets/telefono.svg">
+            </a>
+        </div>
     </main>
-
-    <footer>
-        <ul class="lista__footer">
-            <li class="item__telefono">0800-444-7755</li>
-            <li class="item__mail">consultasLSRL@logistica.com.ar</li>
-            <li class="item__ubicacion">Adolfo Alsina 1653</li>
-            
-            <ul class="item__redes">
-                <li class="item"><a href="https://es-la.facebook.com"><img src="assets/facebook.svg" alt="icono facebook" height="30rem"></a></li>
-                <li class="item"><a href="https://www.instagram.com"><img src="assets/instagram.svg" alt="icono instagram" height="30rem"></a></li>
-                <li class="item"><a href=" https://api.whatsapp.com/send/?phone=5491127370594"><img src="assets/whatsapp.svg" alt="icono whatsapp" height="30rem"></a></li>     
-            </ul>
-            <li class="item__copy">Copyright Reserved 2023 <img src="assets/copy.svg"alt="icono de copyright" width="15rem"></li>
-        </ul>
-        
-        <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3283.716900547346!2d-58.392128923544426!3d-34.61131955790088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM2JzQwLjgiUyA1OMKwMjMnMjIuNCJX!5e0!3m2!1ses!2sar!4v1682980024059!5m2!1ses!2sar" width="150%" height="90%"  style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <footer id="footer">
+        <img src="assets/Logo vectorizado-Siswork-blanco-05.svg" alt="" id="logo-footer">
+        <div id="linea-v"></div>
+        <div id="datos-footer">
+            <div class="dato-footer">
+                <img src="assets/ubicacion.svg" alt="">
+                <p> Zárate, Buenos Aires</p>
             </div>
-            
+            <div class="dato-footer">
+                <img src="assets/email.svg" alt="">
+                <p> tcolombo@siswork.com.ar</p>
+            </div>
+            <div class="dato-footer" >
+                <img src="assets/email.svg" alt="">
+                <p>Soporte técnico 24HS</p>
+            </div>
+            <div class="dato-footer" >
+                <img src="assets/email.svg" alt="">
+                <p>Horarios de atención: <br> lunes a viernes de 8hs a 17hs </p>
+            </div>
+        </div>
     </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-

@@ -1,264 +1,857 @@
+@font-face {
+    font-family: Controller5;
+    src: url(assets/Controller_Five.otf);
+}
+@font-face {
+    font-family: Controller4;
+    src: url(assets/Controller_Four.otf);
+}
 
-main{
-    text-align: center;
-    border-color: black;
+@font-face {
+    font-family: Controller3;
+    src: url(assets/Controller_Three.otf); 
+}
+
+/* ESTILO GENERAL */
+
+body, header, footer {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/* HEADER */
+.menu {
+    z-index: 11;
+    font-size: 0.7em;
+    display: flex;
+
+
+    width: 100%;
+    position: fixed;
+    color: white;
+    height: 80px;
+    font-family: Controller4;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 15rem;
+
+    
+    max-height: 3rem;
+    background-color:rgb(40, 48, 58) ;
+    width: 100%;
+}
+
+.menu-links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;   
+}
+
+.menu-item {
+    position: relative;
+    height: 100%;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    padding: 0 20px;
+}
+.menu-link:hover {
+    color:rgb(107, 108, 109);
+}
+.menu-desplegable {
+    display: none;
+    cursor: pointer;
+}
+#menu-siswork{
+    font-family: Controller4;
+    font-size: 2em;
+    align-self: center;
+    height: 1.2em;
+}
+li.linea {
+    border-bottom: 1px solid white;
+    width: 135px;
+    height: .1em;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.menu-img--show {
+    transform: rotate(180deg);
+}
+
+/* PRESENTACION MOVIL */
+.movil {
+    display: none;
+    background-image: url("img/movil.png");
+    background-size: 25rem;
+    height: 12rem;
+    width: 100%;
+    top: 150px;
+}
+
+ /* CARRUSEL*/
+#carousel{
+    z-index: 0;
+    background-color: rgba(73, 136, 211, 1);
+}
+.carousel-inner {
+    max-height: 650px;
+}
+.carousel-fade {
+    transition: .6s;
+}
+.carousel-caption.txt {
+    transform: translate(0,-22rem);
+}
+.carousel-caption {
+    transform: translate(0rem, -20rem);
+}
+.first {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#logo-carousel {
+    width: 50%;
+}
+p.titulo-carousel {
+    font-family: Controller5;
+    font-size: 2.5em;
+    
+}
+p.sub-carousel {
+    font-family: Controller3;
+    font-size: 1.2em;  
+}
+
+.boton-carousel {
+    border-style: none;
+    background-color: rgba(73, 136, 211, 1);
+    color: white;
+    height: 2.5rem;
+    width: 11rem;
+    border-radius: 20px;
+    margin: 1rem 1rem;
+    font-family: Controller4;
+    font-size: 0.9em;
+}
+.boton-carousel a#link-contacto {
+    text-decoration: none;
+    color: white;
+
+}
+/* QUIENES SOMOS */
+
+#somos {
+    width: 100%;
+    height: 100%;
+    padding: 3em 0 0 0;
+    background-color: rgba(73, 136, 211, 1) ;
+}
+.somos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
     justify-content: center;
     align-items: center;
-    align-content: center;
 
+    gap: 2rem;
+    color: white;
 }
-
-#presentacion {
-    background-image: url("img/presentacion.jpg");
-    background-size: 90rem;
+.titulo-somos {
+    font-family: Controller4;
+    font-size: 2em;   
 }
-article p.titulo  {
-    font-size: 2em;
-    height: 1em;
-}
-#servicios {
+.contenido {
     display: inline-flex;
-    width: 100%;
-    margin: 1rem 0;
-
-}
-.servicios {
-    width: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+}
+.texto-somos {
+    max-width: 35rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* subseccion empresas que confiaron */
+#empresas p.titulo {
+    font-size: 1.7em;
+}
+div#empresas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    
+    margin: 4rem 1rem ;
+
+    width: 100%;
+    height: 100%;
+}
+.contenedor-elementos {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 1em;
 }
-.servicios li {
+
+span.contenedor-img {
+    background-color: rgba(240, 240, 240, 1);
+    width: 13rem;
+    height: 9rem;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 0.5rem;
-    width: 16rem;
-    height: 23rem;
-    border: 2px solid rgb(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.07);
-    padding: 1.5rem;
-}
-.servicios li:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.servicios li img {
-    width: 9rem;
-}
-
-.titulo-servicios {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-
-/* CARROUSEL + FORMULARIO */
-#contacto {
-    margin: 2rem 0;
-}
-#container-slider {
-    width: 37rem;
-    height: 27.7rem;
-}
-.btn-left,
-.btn-right {
-    color: white;
-}
-.btn-left {
-    transform: translate(-17rem, -15rem);
-}
-.btn-right {
-    transform: translate(17rem, -18rem);
-}
-.txt-div {
-    transform: translateY(-11rem);
-    height: 7rem;
-}
-.titulo-slider {
-   transform: translateY(-0.6rem);
-    
-}
-.texto-slider {
-    height: 1rem;
-    transform: translateY(-1.9rem);
-    padding: 0 1.5rem;
-}
-#puntos {
-    transform: translateY(-8.3rem);
-}
-#formulario {
-    max-height: 27.1rem;
-    width: 30rem;
-    padding: 4rem;
-}
-#form_contacto {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-/* CLIENTES */
-
-#empresas {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0,0.8);
-    color: white;
-    margin: 2rem 0 0  0;
-    padding: 2rem 0 3rem 0;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.img-empresa {
+    width: 11rem;
+}
+.E-titulo {
+    font-family: Controller3;
+    color: rgba(73, 136, 211, 1);
+    font-size: 1em;
+}
+
+/* SECCION SERVICIOS */
+#servicios {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     justify-items: center;
     align-items: center;
+    margin: 4rem 0 0 0;
+    text-align: center;
+    
+
     width: 100%;
+    height: 100%;
+}
+.texto-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 35rem;
+}
+.titulo {
+    font-family: Controller4;
+    font-size: 2.1em;
+    color: black;
+    padding: 1rem;
 }
 
-.clientes {
+p.contenido-servicios {
+    font-family: "Open Sans", sans-serif;
+    color: rgba(40, 48, 58, 1);
+    font-weight: lighter;
+    text-align: left;
+}
+
+p.contenido-soporte {
+    font-family: "Open Sans", sans-serif;
+    color: rgba(40, 48, 58, 1);
+}
+
+div.tipo-servicio{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div.tipo-servicio.proveedor {
+    flex-direction: row-reverse;
+}
+
+
+.sub-servicios {
+    font-family: Controller3;
+    font-size: 1.6em;
+    color: rgba(73, 136, 211, 1);
+}
+
+
+#img-soporte {
+    width: 16.5em;
+}
+#img-ventas {
+    width: 16.5em;
+}
+
+/* SOPORTE TECNICO */
+div#soporte {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  
+    gap: 1.5rem;
+    padding: 2rem 9rem; 
+    margin: 4rem 0;
+}
+.sub-soporte {
+    font-family: Controller4;
+    font-size: 1.3em;
+    color: rgba(73, 136, 211, 1);
+}
+.texto-soporte {
+    display: flex;
+    flex-direction: column;
+    width: 16em;
+    text-align: center;
+    padding: .5em;
+}
+.img-tipo-soporte {
+    width: 8em;
+}
+
+
+/* MARCAS */
+#marcas {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+
+    margin: 2rem 2rem;
+}
+.marca {
+    padding: 0;
+}
+.marca img {
+    width: 10rem;
+}
+
+
+/*  CONTACTO */
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 2em 0;
+    gap: 2em;
+    padding: 2em 0 0 0;
+}
+
+#form-contacto {
+    width: 39em;
+    padding: 1.5em 4em 2em 4em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    border-radius: 30px;
+    border: 2px solid  rgba(73, 136, 211, 1) ;
+}
+#datos-form {
+    display: flex;
+    flex-direction: column;
+
+}
+label {
+    font-family: "Open Sans", sans-serif;
+    color: rgba(73, 136, 211, 1) ;
+    padding-top: 1em;
+}
+input {
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
+    
+    padding: 0.2em 0.5em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+}
+textarea {
+    height: 6em ;
+    width: 34em;
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+}
+select {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    background-color:  rgba(217, 217, 217, 1);
+    border: none;
+    padding: 0.2em 0.5em;
+}
+select:hover {
+    color: #630f0f;
+}
+.enviado {
+    background-color: rgb(30, 155, 85);
+    border-radius: 16px;
+    text-align: center;
+    width: 230px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    padding: 0.2em 0;
+}
+button#boton-form {
+    border: none;
+    background-color: rgba(73, 136, 211, 1);
+    width: 9em;
+    height: 2.2em ;
+    font-size: 1em;
+    font-family: Controller4;
+    color: white;
+    border-radius: 20px;
+}
+.boton-flotante {
+    position: fixed;
+    z-index: 10000;   
+}
+#whats{
+    bottom: 20px;
+    right:20px;
+}
+#telefono {
+    bottom: 110px;
+    right:20px;
+    background-color: white;
+    border-radius: 100%;
+}
+img#wp {
+    width: 4rem;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+ }
+
+img#tel {
+    width: 4rem;
+    border-radius: 100%;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+}
+
+
+/* FOOTER */
+footer {
+    background-color:rgb(40, 48, 58);
+    width: 100%;
+    max-height: 327px;
+    color: white;
+    font-family: "Opensans", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    position: relative;
+}
+#footer {
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 2rem;
-    gap: 1rem;
+    justify-content: space-around;
     width: 100%;
+    margin: 0;
+    padding: 2rem 0 1rem 0;
+}
+#linea-v {
+    border-left: 2px solid white;
+    height: 70%;
+    left: 50%;
+    position: absolute;
 }
 
-#cliente_img {
-    background-color: rgb(48, 48, 48);
-    width: 10rem;
-    height: 9rem;
+#logo-footer {
+    width: 19em;
+}
+#datos-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center ;
     padding: 1rem 0;
+
+    gap: 0.3em;
+}
+.dato-footer {
+    display: inline-flex;
+    justify-content: left;
+    align-items: flex-start;
+
+    gap: 1em;
 }
 
-@media only screen and (max-width:1300px) {
-    .clientes {
-        padding: 1rem 3rem;
+/* ANIMACIONES */
+[data-animation="show1"]{
+    opacity: 0;
+    transform: scale(0);
+    transition: .6s ease-in .2s;
+
+    --opacity:1;
+    --transform: scale(1);              
+}
+[data-animation="show2"]{
+    opacity: 0;
+    transform: scale(0);
+    transition: .6s ease-in .4s;
+
+    --opacity:1;
+    --transform: scale(1);
+}
+[data-animation="show3"]{
+    opacity: 0;
+    transform: scale(0);
+    transition: .6s ease-in .6s;
+
+    --opacity:1;
+    --transform: scale(1);
+}
+[data-animation="fadeR"]{
+    opacity: 0;
+    transform: translate(-20%);
+    transition: .10s ease-in .8s;
+
+    --opacity:1;
+    --transform: translate(0%);
+}
+[data-animation="fadeL"]{
+    opacity: 0;
+    transform: translate(20%);
+    transition: .10s ease-in .8s;
+
+    --opacity:1;
+    --transform: translate(0%);
+}
+.unset {
+    opacity: var(--opacity);
+    transform: var(--transform);
+
+}
+
+
+/* BREAKPOINTS */
+@media screen and (max-width:1100px) {
+    .menu-container {
+        padding: 0 7rem;
     }
-    @media only screen and (max-width:1135px) {
-        nav {
-            display: flex;
+    .menu-link {
+        padding: 0 15px;
+    }
+    div#soporte {
+        padding: 2rem 0rem;
+        gap: 0;
+    }
+    .carousel-caption {
+        transform: translate(0rem, 0rem);
+    }
+    .carousel-caption.txt {
+        transform: translate(0,-17rem);
+    }
+    .first {
+        transform: translate(0,-13rem);
+
+    }
     
+    @media screen and (max-width:1000px) {
+        div#empresas {
+            margin: 4rem 0rem ;
         }
-        main {
-            display: flex;
-            flex-direction: column;
+        span.contenedor-img {
+            width: 12rem;
+            height: 9rem;
+        }
+        .img-empresa {
+            width: 9rem;
+        }
+
+        p.titulo-carousel {
+            font-size: 2em;
+            
+        }
+        p.sub-carousel {
+            font-size: .9em;  
+        }
+        .texto-somos {
+            max-width: 27rem;
+            margin: 0rem 2rem 3rem 0;
 
         }
+        p.texto-descripcion {
+            max-width: 27rem;
+            margin: 2rem 0 0 0;
+        }
+        #footer {
+            padding: 3rem 0;
+            bottom: 0;
+        }
+        #img-ventas,#img-soporte {
+            width: 15rem;
+        }
 
-        #contacto {
-            padding: 0 0.3rem;
-            max-width: min-content;
-            max-height: min-content;
-        }
-        #container-slider {
-            width: 47rem;
-            height: 35rem;
-        }
-        .btn-left {
-            transform: translate(-21rem, -18rem);
-        }
         
-        .btn-right {
-            transform: translate(21rem, -21rem);
-        }
-        .clientes{
-            padding: 2rem 2rem 0 2rem;
-        }
-        input, select {
-            height: 2rem;
-        }
-        div#formulario {
-            height: 50rem;
-        }
 
-
-        
-        @media only screen and (max-width:1100px) {
-            .servicios {
-                padding: 0 8rem;
-                gap: 1rem;
+    
+        @media screen and (max-width:900px) {
+            li.linea {
+                display: flex;
             }
-            .clientes{
-                padding: 2rem 10rem 0 10rem;
+            .menu-container{
+                flex-direction: column;
+                justify-content: center;
+                height: 2rem;
             }
-
-        }
-
-        @media only screen and (max-width:800px) {
-            #contacto {
-                padding: 0;
+            .menu-desplegable{
+                display:flex;
+                padding-bottom: .5em;
+            }
+    
+            .menu {
+                width: 100%;
+            }
+            .menu-links {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                
+    
+                z-index: -12;
+                width: 100%;
+                height: max-content;
+                top: 2.8em;
+                right: 0;
+                padding: 1em 0 0 0;
+                overflow-y: auto;
+                transform: translateY(-90%);
+                
+                background-color:rgb(40, 48, 58);
+            }
+            .menu-links--show {
+                transform: unset;
+                width: 100%;
+                transition: transform .5s;
+            }
+            .menu-link {
                 height: auto;
-                width: 100%;
+                padding: 1em 0 1.2rem 0;
             }
-            #empresas {
-                padding: 2rem 3rem;
+            #menu-siswork{
+                align-self: center;
+                height: 1em;
             }
-            .servicios {
-                padding: 0;
-                gap: 1em;
+            #img-empresas {
+                padding: 0 1rem;
             }
-            #container-slider {
-                width: 100%;
-                height: 25rem;
+
+            div#soporte {
+                padding: 1rem 0;
             }
-            .btn-left {
-                transform: translate(-16rem, -15rem);
+
+            #marcas {
+                padding: 0rem;
+            }
+            .carousel-caption.txt {
+                transform: translate(0,-13rem);
+            }
+            .first {
+                transform: translate(0,-10rem);
+        
+            }
+
+
+            #footer {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 0 0 0 ;
+                bottom: 0;
+                max-height: 360px;
+            }
+            #logo-footer {
+                padding-bottom: 1.5rem;
+            }
+            #linea-v {
+                display: none;
+            }
+            .contenido {
+                max-width: 41rem;
+            }
+            .texto-descripcion {
+                max-width: 30rem;
+            }
+
+
+            @media screen and (max-width: 800px) {
+
+                p.titulo-carousel {
+                    font-size: 2em;
+                    
+                }
+                p.sub-carousel {
+                    font-size: .9em;  
+                }
+                input, textarea, select {
+                    width: 400px;
+                }
+                #form-contacto {
+                    padding: 1em 2em;
+                    margin: 0 0 3em 0 ;
+                    width: fit-content;
+                }
+
+                .boton-carousel {
+                    height: 1.8rem;
+                    width: 7rem;
+                    font-size: 0.7em;
+                }
+                .carousel-caption.txt {
+                    transform: translate(0,-11rem);
+                }
+                .first {
+                    transform: translate(0,-8rem);
+                }
+
+                @media screen and (max-width:580px) {
+
+                    div#soporte {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1em;
+                    }
+                    .tipo-soporte {
+                        display: flex;
+                        flex-direction: row;
+                        width: 360px;
+                    }
+                    .sub-soporte {
+                        font-family: Controller4;
+                        font-size: 1.1em;
+                        color: rgba(73, 136, 211, 1);
+                    }
+
+                    .texto-soporte {
+                        width: 20em;
+                        text-align: center;
+                    }
+                    .img-tipo-soporte {
+                        width: 7.5em;
+                        margin: 0 0 0 2em;
+                    }
+                    input, textarea, select {
+                        width: 280px;
+                    }
+                    .somos{
+                        gap: 0;
+                    }
+                    .titulo-somos {
+                        font-size: 1.5em;   
+                    }
+
+                    #img-somos {
+                        display: none;
+                    }
+                    
+                    #img-ventas,#img-soporte {
+                        width: 13rem;
+                    }
+                    #empresas p.titulo {
+                        font-size: 1em;
+                    }
+                    .titulo {
+                        font-size: 1.5em;
+                    }
+                    p.contenido-servicios {
+                        max-width: 25em;
+                    }
+                    p.contenido-soporte{
+                        max-width: 25em;
+                    }
+                    .texto-somos {
+                        max-width: 30rem;
+                        padding-left: 2rem;
+                    }
+
+
+                    @media screen and (max-width:380px) {
+                        .menu-container {
+                            max-height: 1em;
+                        }
+                        #menu-siswork {
+                            display: none;
+                        }
+                        .menu-links {
+                            top: 0.4em;
+                        }
+                        #carousel {
+                            display: none;
+                        }
+                        .movil {
+                            display: flex;
+                        }
+                        .somos {
+                            margin: 0;
+                        }
+                        span.contenedor-img {
+                            width: 10rem;
+                        }
+    
+                        #img-empresas {
+                            gap: 1em;
+                        }
+                        .img-empresa {
+                            width: 8rem;
+                        }
+                        #servicios {
+                            padding: 0;
+                        }
+
+                        #marcas { 
+                            padding: 0;
+                        }
+                        p.contenido-servicios {
+                            max-width: 20em;
+                        }
+                        p.contenido-soporte{
+                            max-width: 20em;
+                        }
+                        .texto-somos {
+                            max-width: 30rem;
+                        }
+
+
+    
+                        
+                    }
+                    
+                }
+
+
+
+
+                
             }
             
-            .btn-right {
-                transform: translate(16rem, -18rem);
-            }
-        }
-        @media only screen and (max-width:380px) {
-            .clientes {
-                padding: 2rem 2rem;
-            }
-            #contacto {
-                margin: 0;
-                padding: 0;
-                max-width: max-content;
-            }
-            #presentacion {
-                width: 100%;
-                max-height: fit-content;
-            }
-            .presentacion p {
-                padding: 0;
-            }
-            #container-slider {
-                width: 23rem;
-                height: 17rem;
-            }
-            .txt-div {
-                height: 8rem;
-            }
-            .titulo-slider{
-                transform: translateY(-1.3rem);
-            }
-            .texto-slider {
-                transform: translateY(-2.7rem);
-            }
-
-            #formulario {
-                padding: 2rem;
-                width: 23rem;
-            }
-
-
         }
     }
 }
-
-
-
-
-
