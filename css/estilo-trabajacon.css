@@ -3,7 +3,7 @@ main {
     flex-direction: column;
 }
 #presentacion {
-    background-image: url("/img/equipo.jpg");
+    background-image: url("../img/equipo.jpg");
     background-size: 90rem;
 }
 p.titulo {
@@ -70,7 +70,7 @@ p.titulo {
     align-items: center;
     border-radius: 2px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.66);
-    content: url(../assets/upload.svg) ;
+    content: url("../assets/upload.svg") ;
     position: absolute;
     width: 100%;
     padding: 0;
