@@ -8,7 +8,7 @@ main{
 }
 
 #presentacion {
-    background-image: url("/img/mapa.jpg");
+    background-image: url("../img/mapa.jpg");
     background-size: 90rem;
 }
 p.titulo {
@@ -140,7 +140,7 @@ p#error {
     justify-content: center;
     align-items: center;
     padding: 4.5rem 2rem;
-    background-image: url("/img/seguimientoh.jpg");
+    background-image: url("../img/seguimientoh.jpg");
     background-size: 52rem;
 }
 
@@ -235,7 +235,7 @@ ul li .active .uil{
             padding: 0 4rem;
         }
         #barra__progreso {
-            background-image: url("/img/seguimientov.jpg");
+            background-image: url("../img/seguimientov.jpg");
             background-size: 32rem;
         }
         
